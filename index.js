@@ -5,6 +5,7 @@ var verifyContent = function(content) {
 	content.prohibitedItems = typeof content.prohibitedItems !== 'undefined' ? content.prohibitedItems : [];
 	content.quit = typeof content.quit !== 'undefined' ? content.quit : true;
 	content.clientName = typeof content.clientName !== 'undefined' ? content.clientName : client;
+	content.callback = typeof content.callback !== 'undefined' ? content.callback : function(data){console.log(data)};
 }
 
 var scanAll = function(content) {
