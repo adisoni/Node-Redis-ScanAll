@@ -3,15 +3,21 @@ A simple and easy to use node.js module for scanning all elements in a Redis dat
 
 ## Sample Usage
 ```
+var redis = require("redis");
+
+var client = redis.createClient();
+
+client.on();
+
 var redisScan = require('index.js');
 options = {
-  nextIndex:          \\default value 0
-  listofResults:      \\default value []
-  count:              \\default value 10
-  prohibitedItems:    \\default value []
-  quit:               \\default value true
-  clientName:         \\default value client
-  callback:           \\default value console.log(data)
+  nextIndex: ;          \\default value 0
+  listofResults: ;      \\default value []
+  count: ;              \\default value 10
+  prohibitedItems: ;    \\default value []
+  quit: ;               \\default value true
+  clientName: ;         \\default value client
+  callback: ;           \\default value console.log(data)
 }
 redisScan.scanAll(options)
 ```
